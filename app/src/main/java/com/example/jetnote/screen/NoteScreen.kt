@@ -3,6 +3,7 @@ package com.example.jetnote.screen
 import android.os.Build
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -67,6 +68,7 @@ fun NoteScreen(
             ,shape = CircleShape) {
             Icon(imageVector = Icons.Rounded.Add , contentDescription = "Add Icon")
         }
+
     }
 }
 
@@ -84,7 +86,7 @@ fun NoteRow(
             .padding(4.dp)
             .clip(RoundedCornerShape(topEnd = 30.dp, bottomStart = 30.dp))
             .fillMaxWidth(),
-        color = Color(0xFFDFE6EB),
+        color = Color(0xFF96CFF7),
         elevation = 6.dp,
     ) {
         Column(
@@ -93,7 +95,7 @@ fun NoteRow(
                 .padding(horizontal = 16.dp, vertical = 6.dp),
             horizontalAlignment = Alignment.Start
             ){
-            Text(text = note.title, style = MaterialTheme.typography.h6)
+            Text(text = note.title, style = MaterialTheme.typography.h6, color = Color.Black)
             Spacer(modifier.height(5.dp))
             Text(text = note.description, style = MaterialTheme.typography.subtitle1)
             Spacer(modifier.height(5.dp))

@@ -46,7 +46,7 @@ fun AddNoteScreen(onAddNote: (Note) -> Unit, navController: NavController){
         TopAppBar(modifier = Modifier.padding(0.dp),title = {
             Text(text = stringResource(id = R.string.app_name))
         },
-            backgroundColor = Color(0xFFE8C1F1)
+            backgroundColor = Color(0xFFF7DAFD)
         )
 
         NoteInputText(modifier = Modifier.padding(top = 9.dp, bottom = 9.dp),text = title, label = "Title", onTextChange = {

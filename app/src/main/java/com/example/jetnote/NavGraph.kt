@@ -8,10 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.jetnote.data.NotesDataSource
-import com.example.jetnote.screen.AddNoteScreen
-import com.example.jetnote.screen.NoteScreen
-import com.example.jetnote.screen.NoteViewModel
-import com.example.jetnote.screen.Screen
+import com.example.jetnote.screen.*
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
@@ -20,7 +17,7 @@ fun SetUpNavGraph(
     noteViewModel: NoteViewModel = viewModel()
 ){
     NavHost(navController = navController,
-        startDestination = Screen.Note.route
+        startDestination = Screen.Splash.route
     ){
         composable(
             route = Screen.Note.route
@@ -41,6 +38,11 @@ fun SetUpNavGraph(
                 noteViewModel.addNote(it)
             },
                 navController = navController)
+        }
+        composable(
+            route = Screen.Splash.route
+        ){
+            AnimatedSplashScreen(navController)
         }
     }
 }
