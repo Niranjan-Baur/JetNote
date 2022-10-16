@@ -30,5 +30,5 @@ The App has a very simple and interactive interface which helps the peoples to s
 • ViewModel : is used to connect data to the UI.
 
 ### APPLICATION LINK & FUTURE SCOPE :
-The app is currently in the Alpha testing phase of the users, You can access the app: https://github.com/Niranjan-Baur/Note-Applicatipn/tree/master (GitHub Link).
+The app is currently in the Alpha testing phase of the users, You can access the app: https://github.com/Niranjan-Baur/JetNote/tree/master (GitHub Link).
 
