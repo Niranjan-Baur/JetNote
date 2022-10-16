@@ -32,3 +32,5 @@ The App has a very simple and interactive interface which helps the peoples to s
 ### APPLICATION LINK & FUTURE SCOPE :
 The app is currently in the Alpha testing phase of the users, You can access the app: https://github.com/Niranjan-Baur/JetNote/tree/master (GitHub Link).
 
+JetNote.apk (drive link) : https://drive.google.com/file/d/1w2sLlQ8YY3H-9BN675ps32lZGgXl3cYh/view?usp=sharing
+
